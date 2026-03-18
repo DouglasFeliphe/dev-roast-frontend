@@ -11,3 +11,5 @@ export { Heading } from './Heading';
 export { SectionTitle } from './SectionTitle';
 export type { ToggleProps } from './Toggle';
 export { Toggle } from './Toggle';
+export type { WindowButtonsProps } from './WindowButtons';
+export { WindowButtons } from './WindowButtons';

@@ -43,5 +43,5 @@ export type { ScoreRingProps } from './ScoreRing';
 export { ScoreRing } from './ScoreRing';
 export type { StatsFooterProps } from './StatsFooter';
 export { StatsFooter } from './StatsFooter';
-export type { TableRowProps } from './TableRow';
-export { TableRow } from './TableRow';
+export type { TableRowCellProps, TableRowProps } from './TableRow';
+export { TableRow, TableRowCell } from './TableRow';

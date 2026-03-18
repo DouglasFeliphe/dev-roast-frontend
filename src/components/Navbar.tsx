@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ComponentPropsWithoutRef } from 'react';
+import { Logo } from './Logo';
 
 export interface NavbarProps extends ComponentPropsWithoutRef<'nav'> {
   logoText?: string;
@@ -17,10 +18,7 @@ export const Navbar = ({
       className={`flex h-14 items-center border-b border-border-primary bg-bg-page px-6 ${className ?? ''}`}
       {...props}
     >
-      <div className="flex items-center gap-2 font-mono text-lg font-medium text-text-primary">
-        <span className="text-accent-green text-xl font-bold">&gt;</span>
-        {logoText}
-      </div>
+      <Logo size="sm" text={logoText} />
       <div className="flex-1" />
       {links.map((link) => (
         <Link

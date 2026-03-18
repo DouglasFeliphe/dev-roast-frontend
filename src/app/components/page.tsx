@@ -9,6 +9,7 @@ import {
   ScoreRing,
   StatsFooter,
   TableRow,
+  TableRowCell,
 } from '@/components';
 import { AnalysisCard } from '@/components/AnalysisCard';
 import {
@@ -164,12 +165,14 @@ export default function ComponentsPage() {
           <SectionTitle label="table_row" />
 
           <div className="w-full overflow-hidden rounded-none border border-border-primary">
-            <TableRow
-              rank={1}
-              score={2.1}
-              codePreview="function calculateTotal(items) { var total = 0; ..."
-              language="javascript"
-            />
+            <TableRow>
+              <TableRowCell className="w-10 text-text-tertiary">#1</TableRowCell>
+              <TableRowCell className="w-14 font-bold text-accent-red">2.1</TableRowCell>
+              <TableRowCell className="flex-1 truncate text-text-secondary">
+                function calculateTotal(items) {'{'} var total = 0; ...
+              </TableRowCell>
+              <TableRowCell className="w-24 text-right text-text-tertiary">javascript</TableRowCell>
+            </TableRow>
           </div>
         </section>
 
