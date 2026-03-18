@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
-:root {
+@theme {
   /* Base colors */
-  --background: #f2f3f0;
-  --foreground: #111111;
+  --color-background: #f2f3f0;
+  --color-foreground: #111111;
 
   /* Accent colors */
-  --accent-green: #10b981;
-  --accent-red: #ef4444;
-  --accent-amber: #f59e0b;
-  --accent-cyan: #06b6d4;
-  --accent-blue: #3b82f6;
-  --accent-orange: #f97316;
+  --color-accent-green: #10b981;
+  --color-accent-red: #ef4444;
+  --color-accent-amber: #f59e0b;
+  --color-accent-cyan: #06b6d4;
+  --color-accent-blue: #3b82f6;
+  --color-accent-orange: #f97316;
 
   /* Text colors */
-  --text-primary: #fafafa;
-  --text-secondary: #6b7280;
-  --text-tertiary: #4b5563;
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #6b7280;
+  --color-text-tertiary: #4b5563;
 
   /* Background colors */
-  --bg-page: #0a0a0a;
-  --bg-surface: #0f0f0f;
-  --bg-elevated: #1a1a1a;
-  --bg-input: #111111;
+  --color-bg-page: #0a0a0a;
+  --color-bg-surface: #0f0f0f;
+  --color-bg-elevated: #1a1a1a;
+  --color-bg-input: #111111;
 
   /* Border colors */
-  --border-primary: #2a2a2a;
-  --border-secondary: #252525;
-  --border-focus: #10b981;
+  --color-border-primary: #2a2a2a;
+  --color-border-secondary: #252525;
+  --color-border-focus: #10b981;
 
   /* Semantic colors */
   --color-success: #004d1a;
@@ -39,14 +39,24 @@
   --color-info: #000066;
   --color-info-foreground: #b2b2ff;
 
+  /* Syntax highlighting */
+  --color-syn-function: #61afef;
+  --color-syn-keyword: #c678dd;
+  --color-syn-number: #d19a66;
+  --color-syn-operator: #abb2bf;
+  --color-syn-property: #98c379;
+  --color-syn-string: #e5c07b;
+  --color-syn-type: #e5c07b;
+  --color-syn-variable: #e06c75;
+
   /* Typography */
   --font-primary: "JetBrains Mono", monospace;
   --font-secondary: "IBM Plex Mono", monospace;
 
   /* Radius */
-  --radius-none: 0;
   --radius-m: 16px;
   --radius-pill: 999px;
+  --radius-none: 0;
 
   /* Spacing */
   --spacing-xs: 4px;
@@ -54,66 +64,10 @@
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 40px;
-
-  /* Syntax highlighting */
-  --syn-function: #61afef;
-  --syn-keyword: #c678dd;
-  --syn-number: #d19a66;
-  --syn-operator: #abb2bf;
-  --syn-property: #98c379;
-  --syn-string: #e5c07b;
-  --syn-type: #e5c07b;
-  --syn-variable: #e06c75;
-}
-
-@theme inline {
-  /* Colors */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent-green: var(--accent-green);
-  --color-accent-red: var(--accent-red);
-  --color-accent-amber: var(--accent-amber);
-  --color-accent-cyan: var(--accent-cyan);
-  --color-accent-blue: var(--accent-blue);
-  --color-accent-orange: var(--accent-orange);
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-tertiary: var(--text-tertiary);
-  --color-bg-page: var(--bg-page);
-  --color-bg-surface: var(--bg-surface);
-  --color-bg-elevated: var(--bg-elevated);
-  --color-bg-input: var(--bg-input);
-  --color-border-primary: var(--border-primary);
-  --color-border-secondary: var(--border-secondary);
-  --color-border-focus: var(--border-focus);
-  --color-success: var(--color-success);
-  --color-success-foreground: var(--color-success-foreground);
-  --color-warning: var(--color-warning);
-  --color-warning-foreground: var(--color-warning-foreground);
-  --color-error: var(--color-error);
-  --color-error-foreground: var(--color-error-foreground);
-  --color-info: var(--color-info);
-  --color-info-foreground: var(--color-info-foreground);
-
-  /* Typography */
-  --font-primary: var(--font-primary);
-  --font-secondary: var(--font-secondary);
-
-  /* Radius */
-  --radius-m: var(--radius-m);
-  --radius-pill: var(--radius-pill);
-  --radius-none: var(--radius-none);
-
-  /* Spacing */
-  --spacing-xs: var(--spacing-xs);
-  --spacing-sm: var(--spacing-sm);
-  --spacing-md: var(--spacing-md);
-  --spacing-lg: var(--spacing-lg);
-  --spacing-xl: var(--spacing-xl);
 }
 
 body {
-  background: var(--bg-page);
-  color: var(--text-primary);
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
   font-family: var(--font-primary);
 }
