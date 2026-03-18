@@ -1,7 +1,5 @@
+import { CodeInputPage } from '@/features/code-input/CodeInputPage';
+
 export default function Home() {
-  return (
-    <div className="min-h-screen">
-      <h1>Hello World</h1>
-    </div>
-  );
+  return <CodeInputPage />;
 }

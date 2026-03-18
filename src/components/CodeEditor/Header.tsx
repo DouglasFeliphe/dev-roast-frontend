@@ -12,7 +12,7 @@ export const CodeEditorHeader = ({ filename, className, ...props }: CodeEditorHe
       className={cn('flex h-10 items-center gap-3 border-b border-border-primary px-4', className)}
       {...props}
     >
-      <WindowButtons className="h-3 w-3" />
+      <WindowButtons />
       <div className="flex-1" />
       {filename && <span className="font-mono text-xs text-text-tertiary">{filename}</span>}
     </div>

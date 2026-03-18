@@ -50,8 +50,12 @@ export const CodeEditor = ({
   return (
     <div className={cn(editor({ state }), className)} {...props}>
       <CodeEditorHeader filename={filename} />
-      <div className="flex flex-1 overflow-auto">
-        {showLineNumbers && <CodeEditorLineNumbers count={lineCount} />}
+      <div className="flex flex-1 overflow-hidden">
+        {showLineNumbers && (
+          <div className="h-full shrink-0 overflow-hidden self-start">
+            <CodeEditorLineNumbers count={lineCount} />
+          </div>
+        )}
         {children ? (
           <div className="flex-1 overflow-auto p-4">{children}</div>
         ) : (

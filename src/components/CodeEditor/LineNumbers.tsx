@@ -15,7 +15,7 @@ export const CodeEditorLineNumbers = ({
   return (
     <div
       className={cn(
-        'flex w-12 shrink-0 flex-col gap-2 border-r border-border-primary bg-bg-surface px-3 py-4 font-mono text-xs text-text-tertiary',
+        'h-auto flex w-12 shrink-0 flex-col gap-2 border-r border-border-primary bg-bg-surface px-3 py-4 font-mono text-xs text-text-tertiary',
         className
       )}
       {...props}
