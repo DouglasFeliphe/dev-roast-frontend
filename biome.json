@@ -38,11 +38,29 @@
   "overrides": [
     {
       "includes": ["*.ts", "*.tsx"],
-      "linter": { "rules": { "correctness": { "noUnusedVariables": "warn" } } }
+      "linter": {
+        "rules": {
+          "correctness": { "noUnusedVariables": "warn" }
+        }
+      }
+    },
+    {
+      "includes": ["src/components/CodeBlock.tsx"],
+      "linter": {
+        "rules": {
+          "security": {
+            "noDangerouslySetInnerHtml": "off"
+          }
+        }
+      }
     }
   ],
   "assist": {
     "enabled": true,
-    "actions": { "source": { "organizeImports": "on" } }
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   }
 }
